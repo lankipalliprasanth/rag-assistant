@@ -10,7 +10,7 @@ document.querySelector('#app').innerHTML = `
 document.getElementById("send").addEventListener("click", async () => {
   const message = document.getElementById("message").value;
 
-  const res = await fetch("http://localhost:5000/api/chat", {
+  const res = await fetch("https://rag-assistant-backend-3qtn.onrender.com/api/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
